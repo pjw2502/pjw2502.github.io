@@ -2,9 +2,17 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="./favicon.ico" rel="Shortcut Icon">
 		<title>PJW-黑色时钟</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
+		<style rel="stylesheet">
+			.menu{
+				margin-top: 20px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="clock">
@@ -22,7 +30,12 @@
 			</div>
 
 		</div>
-
+		<div class="menu">
+			<div class="row">
+				<div class="col-lg-4"><a href="svg.html" class="btn btn-success">SVG</a></div>
+				<div class="col-lg-4"><a href="index.html" class="btn btn-success">时钟</a></div>
+			</div>
+		</div>
 		<script type="text/javascript">
 			const deg = 6;
 			const hr = document.querySelector('#hr');
@@ -42,5 +55,7 @@
 
 			})
 		</script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	</body>
 </html>

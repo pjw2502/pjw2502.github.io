@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./favicon.ico" rel="Shortcut Icon">
+    <title>PJW-SVG</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style rel="stylesheet">
+        .menu{
+            margin-top: 20px;
+        }
+        .svg{
+            background: white;height: 100px;width: 100px;
+
+        }
+        .path{
+            stroke-dasharray: 320;
+            stroke-dashoffset: 0;
+            animation: dash 1s linear infinite;
+        }
+        @keyframes dash {
+            from { stroke-dashoffset: 320; }
+            to { stroke-dashoffset: 0; }
+        }
+    </style>
+</head>
+<body>
+<div class="svg">
+    <svg width="100" height="100">
+        <g>
+            <path d="
+              M 50,50
+              L 60,40
+              L 70,50
+              L 50,70
+              L 30,50
+              L 40,40
+              Z
+            " fill="transparent" stroke="#000" class="path"></path>
+<!--            <text x="15" y="85" fill="blue">Hello,world!</text>-->
+        </g>
+    </svg>
+</div>
+<div class="menu">
+    <div class="row">
+        <div class="col-lg-4"><a href="svg.html" class="btn btn-success">SVG</a></div>
+        <div class="col-lg-4"><a href="index.html" class="btn btn-success">时钟</a></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
