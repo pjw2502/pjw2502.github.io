@@ -13,7 +13,7 @@
             margin-top: 20px;
         }
         .svg{
-            background: white;height: 550px;width: 1000px;
+            background: white;height: 550px;width: 550px;
 
         }
 
@@ -21,13 +21,13 @@
 </head>
 <body>
 <div class="svg">
-    <svg width="1000" height="550">
+    <svg width="550" height="550">
         <g id="gg">
-            <path d="M10 10 h 530 v 530 H 10 Z" stroke-width="1" stroke="black" fill="transparent"></path>
+            <path d="M100 100 h 300 v 300 H 100 Z" stroke-width="1" stroke="black" fill="transparent"></path>
             <circle r="5" fill="blue" id="cir"></circle>
-            <animateMotion xlink:href="#cir" path="M10 10 h 530 v 530 H 10 Z" dur="5s" repeatCount="indefinite"></animateMotion>
+            <animateMotion xlink:href="#cir" path="M100 100 h 300 v 300 H 100 Z" dur="5s" repeatCount="indefinite"></animateMotion>
         </g>
-        <animateTransform attributeType="XML" xlink:href="#gg" attributeName="transform" begin="0s" dur="50s" type="rotate" from="20 120 120" to="360 250 250" repeatCount="indefinite" />
+        <animateTransform attributeType="XML" xlink:href="#gg" attributeName="transform" begin="0s" dur="10s" type="rotate" from="0 250 250" to="360 250 250" repeatCount="indefinite" />
     </svg>
 </div>
 <div class="menu">
